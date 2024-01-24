@@ -1,0 +1,9 @@
+.up__arrow{
+    position: fixed;
+   bottom: 0%;
+   right: 2%;
+    width: 4rem;
+    height: 4rem;
+    font-size: 3rem;
+    color: var(--color-primary-variant);
+}
