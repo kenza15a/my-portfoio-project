@@ -1,0 +1,33 @@
+/*********************************************About card***************************/
+
+.card__component {
+   background: var(--color-bg-variant);
+   border: 1px solid transparent;
+   border-radius: 1rem;
+   padding: 2rem;
+   text-align: center;
+   transition: var(--transition);
+  -o-transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+   cursor: default;
+
+}
+.card__component:hover{
+    background:transparent;
+    border: 1px solid var(--color-primary-variant);
+}
+
+.card__title {
+    color: var(--color-white);
+    font-size: 0.95rem;
+}
+
+.card__subtitle {
+    color: var(--color-light);
+    font-size: 0.7rem;
+}
+
+.card__icon {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
