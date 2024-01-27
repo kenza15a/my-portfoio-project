@@ -1,7 +1,7 @@
 import React from 'react'
 import CallToAction from '../CallToAction/CallToAction'
 import './Header.css'
-import CV from '../../assets/Cv_kenza_Filali.pdf'
+import CV from '../../assets/CV_kenza_Filali.pdf'
 import Me from '../../assets/kenza Filali 2024.png'
 import HeaderSocials from './HeaderSocials'
 function Header({FullName}) {
