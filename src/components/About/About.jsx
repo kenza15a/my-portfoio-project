@@ -2,7 +2,6 @@ import React from 'react'
 import "./About.css"
 import Me from'../../assets/kenza section about.jpg';
 import Card from '../Card/Card';
-import { PiCodeSimpleLight } from "react-icons/pi";
 
 import { TbFileTypeHtml } from "react-icons/tb";
 import { FaWordpress } from "react-icons/fa6";

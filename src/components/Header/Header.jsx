@@ -1,7 +1,7 @@
 import React from 'react'
 import CallToAction from '../CallToAction/CallToAction'
 import './Header.css'
-import CV from '../../assets/CV_kenza_Filali.pdf'
+import cv from '../../assets/CV_kenza_Filali.pdf'
 import Me from '../../assets/kenza Filali 2024.png'
 import HeaderSocials from './HeaderSocials'
 function Header({FullName}) {
@@ -17,7 +17,7 @@ function Header({FullName}) {
       
    
     <div className='call__to__action'>
-      <CallToAction text="Mon CV " url={CV} />
+      <CallToAction text="Mon CV " url={cv} />
       <CallToAction text="Contactez moi" url="#contact"/>
     </div>
     <HeaderSocials/>
