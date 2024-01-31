@@ -15,6 +15,7 @@ function Services() {
    <h2> Mes compétences </h2>
 
    <div className="container services__container">
+
    <article className='services_anim'>
     <img src={HTML} id="html" alt="html"/>
      <img src={CSS} id="css" alt="CSS"/>
@@ -22,14 +23,13 @@ function Services() {
      <img src={REACTicon} id="REACTicon" alt="REACTicon"/>
      
     </article>
-    {services.map((service)=>{
+    <div className="services__cards">{services.map((service)=>{
                 return(
                    <ServiceComponent serviceName={service.serviceName} servicesList={service.serviceList} key={service.serviceName}/>
                 )
-            })}
-
-
-   </div>
+            })}</div>
+    
+     </div>
  
     
     

@@ -36,6 +36,9 @@ padding: 2rem;
 
 
 }
-.service__list__icon{
+ .service__list__icon{
+    color: var(--color-primary);
+    margin-top: 2px;
+   
 
 }
