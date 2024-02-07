@@ -4,7 +4,7 @@ import CSS from '../../assets/css.png'
 import JS from '../../assets/Js.png'
 import REACTicon from '../../assets/REACT.png'
 import './Services.css'
-import services from '../../data/infoTables'
+import {services} from '../../data/infoTables'
 import ServiceComponent from '../ServiceComponent/ServiceComponent'
 function Services() {
   console.log(services)

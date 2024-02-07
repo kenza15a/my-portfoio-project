@@ -33,5 +33,58 @@ const services = [
 
 ];
 
+//portfolio content
+const works = [
+    {
+        title: "AgentBank",
+        cover: "/assets/projects/agentbank.png",
+        URL: "https://github.com/kenza15a/P13_agentbank_redux-frontend",
+        technologies: ["react", "redux", "router", "javascript", "css", "jwt", "mongodb"]
 
-export default  services ;
+    },
+    {
+        title: "HRNET -application RH avec react ",
+        cover: "/assets/projects/hrnet.png",
+        URL: "https://github.com/kenza15a/P14-direct-hrnet-app",
+        technologies: ["HTML", "css", "react ", " react router", "api REST", "JSON", "web service", "javascript", "css", "figma", "react hooks"]
+
+    },
+    {
+        title: "Sportsee -Fitness dashboard ",
+        cover: "/assets/projects/sportsee.png",
+        URL: "https://github.com/kenza15a/P12_dashboard",
+        technologies: ["HTML", "css", "react ", " react router", "api REST", "JSON", "web service", "javascript", "css", "figma", "react hooks"]
+
+    },
+    {
+        title: "La Kasa ",
+        cover: "/assets/projects/lakasa.png",
+        URL: "https://github.com/kenza15a/p11_lakasa",
+        technologies: ["HTML", "css", "react ", " react router", "api REST", "JSON", "web service", "javascript", "css", "figma", "react hooks"]
+
+    },
+    {
+        title: "Les petits plats - moteur de recherche",
+        cover: "/assets/projects/lespetitsplats.png",
+        URL: "https://github.com/kenza15a/projet7_les_petits_plats",
+        technologies: ["react", "redux", "router", "javascript arrays", "css", "API rest", "JSON"]
+
+    },
+
+    {
+        title: "Fisheye - plateforme photographs",
+        cover: "/assets/projects/fisheye.png",
+        URL: "https://github.com/kenza15a/Front-End-Fisheye",
+        technologies: ["webpack", "", "", "javascript", "css"]
+
+    },
+    {
+        title: "Oh My Food_Animations css et sass",
+        cover: "/assets/projects/ohmyfood.png",
+        URL: "https://github.com/kenza15a/P3_Oh_y_food",
+        technologies: ["Maquette figma", "HTML", "SASS", "animations sass", "css", "integration d'une interface UX "]
+    }
+
+]
+
+export { services, works };

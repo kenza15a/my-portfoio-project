@@ -1,0 +1,38 @@
+.projects__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+#projects {
+    animation: slidAnim 2s cubic-bezier(0.32, 0, 0.67, 0) 0s 1 infinite forwards;
+}
+
+/************************Media querries***************************/
+
+
+/*******************tablets****************************/
+@media screen and ( max-width:1024px) {
+    
+    .projects__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.2rem;
+
+        
+    }
+  
+}
+
+/*********Small devices Mobile*********************/
+@media screen and (max-width:600px) {
+    .projects__container {
+        display: grid;
+        grid-template-columns:  1fr;
+        gap: 1rem;
+        padding:1rem;
+        
+        
+    }
+
+}
