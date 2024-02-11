@@ -1,17 +1,16 @@
 import React from 'react'
 import './Contact.css'
 function ContactCard({contactOption,contactInfo,contactUrl,contactText} ) {
-    //mailto:kenza.filali.rahal@gmail.com
   return (
     <>
     <article className='contact_card'>
 
-    <h4>
+    <h4 className='contact__card__icon'>
     {contactOption}
   </h4>
   <h5>{contactInfo}
   </h5>
-  <a href={contactUrl}>{contactText}</a>
+  <a href={contactUrl} target="_blank" rel="noreferrer">{contactText}</a>
     </article>
     </>
   )
