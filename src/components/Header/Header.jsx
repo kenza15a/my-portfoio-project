@@ -2,7 +2,7 @@ import React from 'react'
 import CallToAction from '../CallToAction/CallToAction'
 import './Header.css'
 import cv from './_Cv_kenza_Filali_pts.pdf'
-import Me from '../../assets/kenza Filali 2024.png'
+import Me from '../../assets/Header picture kenza filali.png'
 import HeaderSocials from './HeaderSocials'
 function Header({FullName}) {
   return (
