@@ -47,7 +47,8 @@ body {
 
 .container {
     width: var(--container-width-lg);
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
+	
 }
 
 h1,
@@ -67,6 +68,7 @@ h1 {
 section {
     margin-top: 5rem;
     height: 100%;
+	
 }
 
 section>h2,
