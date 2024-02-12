@@ -1,28 +1,36 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./ContactForm.css"
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import   {useRef}  from 'react';
-import emailjs from 'emailjs-com';
-import * as Yup from 'yup';
-function ContactForm() {
-    const form = useRef();
 
-    const sendEmail = (e) => {
-      e.preventDefault();
+import * as Yup from 'yup';
+import emailjs, {send} from 'emailjs-com'
+import ModalComponent from '../ModalComponent/ModalComponent';
+import ReCAPTCHA from 'react-google-recaptcha';
+function ContactForm() {
+    const [isModalOpen, setIsModalOpen] = useState(false);
   
-      emailjs
-        .sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, {
-          publicKey: 'YOUR_PUBLIC_KEY',
-        })
-        .then(
-          () => {
-            console.log('SUCCESS!');
-          },
-          (error) => {
-            console.log('FAILED...', error.text);
-          },
-        );
+    const openModal = () => {
+      setIsModalOpen(true);
     };
+  
+    const closeModal = () => {
+      setIsModalOpen(false);
+    };
+    const handleRedirect = () => {
+        closeModal();
+      
+      };
+
+    function SendEmail(object) {
+        emailjs.send("service_s3kwon5", "template_1eoy6fc", object,"HVk_U1r0LulXtJzgf" )
+            .then((result) => {
+                console.log(result.text)
+               
+            }, (error) => {
+                console.log(error.text)
+            })
+    }
   
     const validationSchema = Yup.object().shape({
         name: Yup.string().required('Le nom est requis'),
@@ -35,13 +43,14 @@ function ContactForm() {
     initialValues={{ name: '', email: '', message: '' }}
     
     validationSchema={validationSchema}
-    onSubmit={(values, { resetForm, setSubmitting }) => {
-        // Call sendEmail function here
-        sendEmail(values);
-        // Reset form after successful submission
-        resetForm();
-        // Set submitting to false to enable the button
-        setSubmitting(false);
+    onSubmit={(values, actions) => {
+        setTimeout(() => {
+          SendEmail(values)
+          console.log("submit", values);
+          openModal();
+          actions.setSubmitting(false);
+          actions.resetForm();
+        }, 400)
       }}
   >
     {({ isSubmitting }) => (
@@ -61,11 +70,28 @@ function ContactForm() {
           <Field as="textarea" id="message" name="message" rows="7" placeholder="Votre message"/>
           <ErrorMessage className="error__message" name="message" component="div" />
         </div>
+        <ReCAPTCHA
+            sitekey="6Leprm8pAAAAANu8L1rvpLwZQtinHoqYDqptvuxn"
+            onChange={(value) => console.log('Captcha value:', value)}
+            theme="dark" 
+            size="compact" 
+          />
         <button className='btn btn_primary' type="submit" disabled={isSubmitting}>Envoyer</button>
       </Form>
     )}
   </Formik>
-
+  {isModalOpen && (
+            <ModalComponent
+              isOpen={isModalOpen}
+              contentComponent={
+               <h1 className='modal__text'>Merci pour votre message, Je vous contacterai tes prochainement 😀!  </h1>
+              }
+              closeFunction={closeModal}
+              okButtonState={true}
+              buttonFunction={handleRedirect}
+              buttonText={"A bientot !"}
+            />
+          )}
     </>
   )
 }

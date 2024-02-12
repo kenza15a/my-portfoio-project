@@ -11,7 +11,7 @@ function Contact() {
   return (
    <>
    <section id="contact">
-    <h5>On discute un peu!</h5>
+    <h5>Un petit échange  pro !</h5>
     <h2>Contactez moi</h2>
     <div className='container contact__container'>
 <div className="contact__options">

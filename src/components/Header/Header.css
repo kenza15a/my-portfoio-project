@@ -50,7 +50,7 @@ header {
 /***********************Me image*****************/
 .me{
     background: linear-gradient(var(--color-primary),transparent);
-    width: 21rem;
+    width: 18rem;
     height: 30rem;
     position: absolute;
     left: 50%;
