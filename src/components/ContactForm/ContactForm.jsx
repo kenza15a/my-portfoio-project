@@ -6,7 +6,7 @@ import   {useRef}  from 'react';
 import * as Yup from 'yup';
 import emailjs, {send} from 'emailjs-com'
 import ModalComponent from '../ModalComponent/ModalComponent';
-import ReCAPTCHA from 'react-google-recaptcha';
+
 function ContactForm() {
     const [isModalOpen, setIsModalOpen] = useState(false);
   
@@ -70,12 +70,7 @@ function ContactForm() {
           <Field as="textarea" id="message" name="message" rows="7" placeholder="Votre message"/>
           <ErrorMessage className="error__message" name="message" component="div" />
         </div>
-        <ReCAPTCHA
-            sitekey="6Leprm8pAAAAANu8L1rvpLwZQtinHoqYDqptvuxn"
-            onChange={(value) => console.log('Captcha value:', value)}
-            theme="dark" 
-            size="compact" 
-          />
+        
         <button className='btn btn_primary' type="submit" disabled={isSubmitting}>Envoyer</button>
       </Form>
     )}
