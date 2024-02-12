@@ -81,9 +81,11 @@
 
 /*********Small devices Mobile*********************/
 @media screen and (max-width:600px) {
+    
     .about__me{
         width:65%;
         margin: 0 auto 3rem;
+        display: none;
     
     }
     .about__cards{
@@ -94,12 +96,14 @@
 
         text-align: center;
         padding: 1rem;
+        
     }
     .about__content p{
         margin: 1.5rem 0;
         transition: none;
     }
     .about__content p:hover{
+
 
         color: var(--color-white);
         font-size: 0.8rem;

@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import "./ContactForm.css"
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import   {useRef}  from 'react';
-
 import * as Yup from 'yup';
-import emailjs, {send} from 'emailjs-com'
+import emailjs from 'emailjs-com'
 import ModalComponent from '../ModalComponent/ModalComponent';
 
 function ContactForm() {
@@ -79,7 +77,7 @@ function ContactForm() {
             <ModalComponent
               isOpen={isModalOpen}
               contentComponent={
-               <h1 className='modal__text'>Merci pour votre message, Je vous contacterai tes prochainement 😀!  </h1>
+               <h1 className='modal__text'>Merci pour votre message, Je vous contacterai très prochainement 😀!  </h1>
               }
               closeFunction={closeModal}
               okButtonState={true}
