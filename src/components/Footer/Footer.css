@@ -9,7 +9,7 @@
     background: var(--color-bg);
     margin-bottom: 0;
     margin-top: 2rem;
-   padding: 4rem auto;
+    padding: 4rem auto;
 
 }
 
@@ -53,4 +53,25 @@
 .footer__rights p {
     font-size: 0.7rem;
     color: var(--color-white-light);
+}
+
+/*********medium devices Tablets*********************/
+@media screen and (max-width:1024px) {}
+
+/*********Small devices Mobile*********************/
+@media screen and (max-width:600px) {
+    .container.footer__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        position: static;
+        top: 100vh;
+        height: 10vh;
+        width: 100vw;
+        background: var(--color-bg);
+        margin-bottom: 0;
+        margin-top: 2rem;
+        padding: 1rem auto;
+
+    }
 }
