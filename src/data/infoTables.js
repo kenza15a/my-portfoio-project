@@ -47,27 +47,34 @@ const works = [
         title: "AgentBank - s'authentifier sur une application bancaire  ",
         cover: "/assets/projects/agentbank.png",
         URL: "https://github.com/kenza15a/P13_agentbank_redux-frontend",
-        technologies: ["React js", "Redux toolkit", "React router", "javascript", "css", "user authentification " ,"jwt-Token", "mongodb"," méthode HTTP (ex. : GET, POST etc.) ","Modéliser une API avec swagger"]
+        technologies: ["React js", "Redux toolkit", "React router", "javascript", "css", "user authentification ", "jwt-Token", "mongodb", " méthode HTTP (ex. : GET, POST etc.) ", "Modéliser une API avec swagger"]
     },
     {
         title: "HRNET -application RH avec react ",
         cover: "/assets/projects/hrnet.png",
         URL: "https://github.com/kenza15a/P14-direct-hrnet-app",
-        technologies: [ "sass", "React ", " React router", "context API" ,"Api REST", "JSON", "web service", "Javascript", "css", "figma", "React hooks", "react npm library"]
+        technologies: ["sass", "React ", " React router", "context API", "Api REST", "JSON", "web service", "Javascript", "css", "figma", "React hooks", "react npm library"]
 
     },
     {
         title: "Sportsee -Fitness dashboard ",
         cover: "/assets/projects/sportsee.png",
         URL: "https://github.com/kenza15a/P12_dashboard",
-        technologies: ["HTML", "css", "react ", "figma","svg"," React router", "APi REST","mode développement et production", "JSON", "web service", "javascript", "css", "react hooks","jsdoc"]
+        technologies: ["HTML", "css", "react ", "figma", "svg", " React router", "APi REST", "mode développement et production", "JSON", "web service", "javascript", "css", "react hooks", "jsdoc"]
+
+    },
+    {
+        title: "Photographers Gallery - pexels API  ",
+        cover: "/assets/projects/next js gallery.png",
+        URL: "https://github.com/kenza15a/next-js-gallery-from-pexels-api",
+        technologies: ["NEXTjs", "css", "tailwindcss ", " nextjs Image component", "API", "Api Rest", "Typescript"]
 
     },
     {
         title: "La Kasa- application de ",
         cover: "/assets/projects/lakasa.png",
         URL: "https://github.com/kenza15a/p11_lakasa",
-        technologies: ["HTML", "css", "react ", " React router","JSON", "web service", "javascript", "Figma", "React hooks"]
+        technologies: ["HTML", "css", "react ", " React router", "JSON", "web service", "javascript", "Figma", "React hooks"]
 
     },
     {
@@ -82,7 +89,7 @@ const works = [
         title: "Fisheye - plateforme photographs",
         cover: "/assets/projects/fisheye.png",
         URL: "https://github.com/kenza15a/Front-End-Fisheye",
-        technologies: ["webpack", "Accessibilté web", "javascript", "css","maquette Figma"]
+        technologies: ["webpack", "Accessibilté web", "javascript", "css", "maquette Figma"]
 
     },
     {
