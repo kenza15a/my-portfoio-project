@@ -13,12 +13,18 @@ function Header({ FullName }) {
             <div className="header__infos">
               <h5>Bonjour je suis </h5>
               <h1>{FullName}</h1>
-              <h5 className="text-light">Développeuse Frontend</h5>
+              <h5 className="text-light">
+                Webmaster technique / Développeuse frontend
+              </h5>
             </div>
 
             <div className="call__to__action">
-              <CallToAction text="Mon CV " url={cv} />
-              <CallToAction text="Contactez moi" url="#contact" />
+              <CallToAction text="Mon CV " url={cv} target="_blank" />
+              <CallToAction
+                text="Contactez moi"
+                url="#contact"
+                target="_self"
+              />
             </div>
             <HeaderSocials />
             <a href="#contact" className="scroll__down">
