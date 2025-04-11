@@ -19,8 +19,12 @@ function Header({ FullName }) {
             </div>
 
             <div className="call__to__action">
-              <CallToAction text="Mon CV " url={cv} />
-              <CallToAction text="Contactez moi" url="#contact" />
+              <CallToAction text="Mon CV " url={cv} target="_blank" />
+              <CallToAction
+                text="Contactez moi"
+                url="#contact"
+                target="_self"
+              />
             </div>
             <HeaderSocials />
             <a href="#contact" className="scroll__down">
