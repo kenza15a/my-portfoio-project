@@ -13,7 +13,9 @@ function Header({ FullName }) {
             <div className="header__infos">
               <h5>Bonjour je suis </h5>
               <h1>{FullName}</h1>
-              <h5 className="text-light">Développeuse Frontend</h5>
+              <h5 className="text-light">
+                Webmaster technique / Développeuse frontend
+              </h5>
             </div>
 
             <div className="call__to__action">
