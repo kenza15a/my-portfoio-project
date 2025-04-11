@@ -1,20 +1,21 @@
 nav {
-    background:rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3);
     width: max-content;
     display: flex;
-    gap: 1rem;
+    gap: 0.8rem;
     padding: 0.7rem 1.7rem;
     z-index: 2;
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 0%;
+    bottom: 5rem;
     border-radius: 3rem;
     border: 1px solid var(--color-primary-variant);
     backdrop-filter: blur(15px);
 
 }
-nav a{
+
+nav a {
     color: var(--color-white);
     background: transparent;
     padding: 0.5rem;
@@ -22,13 +23,15 @@ nav a{
     display: flex;
     border-radius: 1rem;
 }
-nav a:hover{
-    background: rgba(0,0,0,0.4);
-    transform:scale(150%);
-    transition:cubic-bezier(0.175, 0.885, 0.32, 1.275);
-   
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.4);
+    transform: scale(150%);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
 }
-nav a.active{
+
+nav a.active {
     background: var(--color-bg);
     color: var(--color-white);
 }
@@ -36,7 +39,7 @@ nav a.active{
 /*********medium devices Tablets*********************/
 @media screen and (max-width:1024px) {
     nav {
-        background:rgba(0, 0, 0, 0.3);
+        background: rgba(0, 0, 0, 0.3);
         width: max-content;
         display: flex;
         gap: 1rem;
@@ -49,27 +52,15 @@ nav a.active{
         border-radius: 3rem;
         border: 1px solid var(--color-primary-variant);
         backdrop-filter: blur(15px);
-    
+
     }
 }
 
 /*********Small devices Mobile*********************/
 @media screen and (max-width:600px) {
     nav {
-        background:rgba(0, 0, 0, 0.3);
+        bottom: 7rem;
         height: max-content;
-        display: flex;
-        flex-direction: column;
-        gap: 0.6rem;
-        padding: 0.7rem;
-        z-index: 2;
-        position: fixed;
-        left: 85%;
-        transform: translateX(-50%);
-        top: 0%;
-        border-radius: 3rem;
-        border: 1px solid var(--color-primary-variant);
-        backdrop-filter: blur(15px);
-    
+        padding: 0.4rem 1rem;
     }
 }

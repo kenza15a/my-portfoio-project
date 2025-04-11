@@ -1,0 +1,151 @@
+.modal-main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    padding: 1.4rem;
+}
+
+
+.modal-main-content button{
+    border-radius: 1.2rem;
+    font-size: 1rem;
+    font-weight: 300;
+    border: solid 1px var(--color-white);
+    transition: var(--transition);
+    
+}
+.modal-main-content button:hover{
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border: solid 1px var(--color-white);
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:rgba(224, 224, 241, 0.2);
+    backdrop-filter: blur(5px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+   
+}
+
+.modal {
+    background-color: var(--color-bg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    position: relative;
+    width: 60vw;
+    max-width: 50vw;
+    max-height: 70vh;
+    min-height: fit-content;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    border-radius: 1rem;
+    z-index: 1001;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 1%;
+    right: 4%;
+    font-size: 2rem;
+    color: var(--color-white);
+    cursor: pointer;
+}
+.modal__text{
+    color: var(--color-white);
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin:2rem 0;
+}
+
+/*****************************************autres ecrans********************************/
+/****************************medium devices Tablets*********************/
+
+@media screen and (max-width:1024px) {
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        z-index: 1000;
+        /* Ensure the modal is on top of other content */
+
+
+    }
+
+    .modal-overlay .modal {
+       
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        position: fixed;
+        padding: 1rem;
+        top: 30%;
+        width: 90%;
+        height: fit-content;
+        max-width: 80vw;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        border-radius: 1rem;
+        z-index: 1001;
+        text-align: center;
+
+
+    }
+}
+
+/*****************************Small devices Mobile*********************/
+
+@media screen and (max-width:600px) {
+    .modal-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+      grid-template-columns: 1fr;
+       place-items: center;
+        padding: 1rem;
+        z-index: 1000;
+        /* Ensure the modal is on top of other content */
+
+
+    }
+
+    .modal-overlay .modal {
+      
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        padding: 1rem;
+        top: 30%;
+        width: 90%;
+        height: fit-content;
+        max-width: 80vw;
+        overflow-y: auto;
+        scroll-behavior: smooth;
+        border-radius: 1rem;
+        z-index: 1001;
+        text-align: center;
+
+
+    }
+   
+
+}

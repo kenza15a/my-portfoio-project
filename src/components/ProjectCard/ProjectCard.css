@@ -1,0 +1,48 @@
+.project__card{
+background-color: var(--color-bg-variant);
+padding: 1.2rem;
+border-radius: 2rem;
+border: 1px solid transparent;
+transition: var(--transition);
+
+    
+}
+.project__card:hover{
+    border-color: var(--color-primary-variant);
+    background: transparent;
+
+}
+.project__item__image{
+    border-radius:0.5rem ;
+    overflow: hidden;
+ image-resolution: 150;
+
+}
+.project__card h3{
+  margin: 1.2rem 0 2rem;  
+  text-align: center;
+}
+
+.project__card__cta{
+display: grid;
+grid-template-columns: 1fr;
+padding: 0.3rem;    
+justify-items: center;
+
+} 
+.card__section__title{
+    margin: 1rem 0 0.7rem;
+    text-align: center;
+}
+#techs{
+    margin: O 4rem 0;
+display: flex;
+font-size: 0.7rem;
+color: var(--color-white-light);
+width: 250px;
+cursor: pointer;
+white-space: wrap;
+overflow: hidden;
+text-overflow: ellipsis;
+transition: var(--transition);
+}

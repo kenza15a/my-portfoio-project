@@ -47,7 +47,8 @@ body {
 
 .container {
     width: var(--container-width-lg);
-    margin: 0 auto;
+    margin: 0 auto 3rem auto;
+	
 }
 
 h1,
@@ -67,6 +68,7 @@ h1 {
 section {
     margin-top: 5rem;
     height: 100%;
+	
 }
 
 section>h2,
@@ -151,8 +153,8 @@ img {
 @keyframes myAnim {
 	0% {
 		animation-timing-function: ease-in;
-		opacity: 0.6;
-		transform: translateX(0px);
+		opacity: 0.8;
+		transform: translateY(0px);
 	}
 
 	24% {
@@ -161,22 +163,22 @@ img {
 
 	40% {
 		animation-timing-function: ease-in;
-		transform: translateX(-26px);
+		transform: translateY(-50px);
 	}
 
 	65% {
 		animation-timing-function: ease-in;
-		transform: translateX(-13px);
+		transform: translateY(-13px);
 	}
 
 	82% {
 		animation-timing-function: ease-in;
-		transform: translateX(-6.5px);
+		transform: translateY(-6.5px);
 	}
 
 	93% {
 		animation-timing-function: ease-in;
-		transform: translateX(-4px);
+		transform: translateY(-4px);
 	}
 
 	25%,
@@ -185,12 +187,55 @@ img {
 	87%,
 	98% {
 		animation-timing-function: ease-out;
-		transform: translateX(0px);
+		transform: translateY(0px);
 	}
 
 	100% {
 		animation-timing-function: ease-out;
 		opacity: 1;
-		transform: translateX(0px);
+		transform: translateY(0px);
+	}
+}
+@keyframes slidAnim {
+	0% {
+		animation-timing-function: ease-in;
+		opacity: 0;
+		transform: translateX(250px);
+	}
+
+	38% {
+		animation-timing-function: ease-out;
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	55% {
+		animation-timing-function: ease-in;
+		transform: translateX(68px);
+	}
+
+	72% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	81% {
+		animation-timing-function: ease-in;
+		transform: translateX(32px);
+	}
+
+	90% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
+	}
+
+	95% {
+		animation-timing-function: ease-in;
+		transform: translateX(8px);
+	}
+
+	100% {
+		animation-timing-function: ease-out;
+		transform: translateX(0);
 	}
 }
